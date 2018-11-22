@@ -1,0 +1,56 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		+b.SECTION.section_team
+			+e.row
+				.container
+					+e.H1.title 
+						+e.SPAN.title-text_big Amazing <b> Team </b>
+						+e.SPAN.title-text_small These wonderful people make work enjoyable.
+					
+					+b.team
+						+e.item
+							+e.box-img
+								+e.IMG.img(src="img/transparent.png")
+							+e.name Kimberly Thompson
+							+e.rank Marketer
+							+b.social-btn
+								+e.A.item(href="#")
+									+b-icon_svg('twitter')
+								+e.A.item(href="#")
+									+b-icon_svg('facebook')
+								+e.A.item(href="#")
+									+b-icon_svg('pinterest')
+
+						+e.item
+							+e.box-img
+								+e.IMG.img(src="img/transparent.png")
+							+e.name Rico Massimo
+							+e.rank Coder
+							+b.social-btn
+								+e.A.item(href="#")
+									+b-icon_svg('twitter')
+								+e.A.item(href="#")
+									+b-icon_svg('facebook')
+								+e.A.item(href="#")
+									+b-icon_svg('google-plus')
+
+
+						+e.item
+							+e.box-img
+								+e.IMG.img(src="img/transparent.png")
+							+e.name Uku Mason
+							+e.rank Graphic Designer
+							+b.social-btn
+								+e.A.item(href="#")
+									+b-icon_svg('facebook')
+								+e.A.item(href="#")
+									+b-icon_svg('pinterest')
+
+						+e.description Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit <br> aenean rhoncus posuere odio in tincidunt proin iaculis.

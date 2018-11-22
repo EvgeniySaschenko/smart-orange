@@ -1,0 +1,46 @@
+mixin b-footer()
+	+b.FOOTER.footer
+		.container
+			+e.row_1
+				+e.col_1
+					+b.contacts_footer
+						+e.H4.title
+							+e.SPAN.title-text_big Say <b> Hello </b>
+							+e.SPAN.title-text_small Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)
+						+e.UL.list
+							+e.LI.item 
+								+e.I.icon
+									+b-icon_svg('smartphone')
+								+e.A.text(href="tel:4165550000") (416) 555-0000
+							+e.LI.item 
+								+e.I.icon
+									+b-icon_svg('mail')
+								+e.A.text(href="mailto:hello@escape.com").text hello@escape.com
+							+e.LI.item 
+								+e.I.icon
+									+b-icon_svg('twitter')
+								+e.SPAN.text @escape
+							+e.LI.item 
+								+e.I.icon
+									+b-icon_svg('facebook')
+								+e.SPAN.text facebook.com/escape
+							+e.LI.item 
+								+e.I.icon
+									+b-icon_svg('google-plus')
+								+e.SPAN.text plus.com/escape
+							+e.LI.item 
+								+e.I.icon
+									+b-icon_svg('pinterest')
+								+e.SPAN.text pinterest.com/escape
+
+				+e.col_2
+					+b.FORM.form_footer(action="action.php")
+						+e.item
+							+e.INPUT.field(name="name" type="text" placeholder="Your Name *" required)
+						+e.item
+							+e.INPUT.field(name="mail" type="email" placeholder="Your E-mail *" required)
+						+e.item
+							+e.TEXTAREA.textarea(name="message" placeholder="Your Message *" required)
+
+			+e.row_2
+				+e.P.text © 2014 Escape by FreebiesXpress • Made In Toronto
